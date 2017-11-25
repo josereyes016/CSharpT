@@ -11,6 +11,7 @@ namespace ConsoleAppMod3
         static void Main(string[] args)
         {
             GetStudentInformation();
+            ValidateBirthday("111290");
         }
 
         static void GetStudentInformation()
@@ -44,9 +45,17 @@ namespace ConsoleAppMod3
             PrintTecherDetails(teacher, course, program, degree);
         }
 
-        private static void PrintTecherDetails(string teacher, string course, string program, string degree)
+        static void PrintTecherDetails(string teacher, string course, string program, string degree)
         {
             Console.WriteLine("{0} will teach course {1} in the program {2} for degree {3}", teacher, course, program, degree);
         }
+
+        // Not implemented
+        static Boolean ValidateBirthday(string birthday)
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 }
